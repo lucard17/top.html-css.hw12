@@ -1,0 +1,211 @@
+:root {
+  /* --bs-primary: #0d6efd; */
+  /* --bs-primary: hsl(216, 98%, 52%); */
+  --bs-primary: #1B5589;  /*Переназначил переменные bootstrap*/
+  --bs-primary-rgb: 27, 85, 137; /*Переназначил переменные bootstrap*/
+
+  --color-browse: hsl(210, 16%, 93%); /*переменные с цветами с макета*/
+  --color-browse-hover: hsl(210, 16%, 73%);
+  --color-current: hsl(0, 0%, 96%);
+  --color-current-hover: hsl(0, 0%, 76%);
+  --color-reviewed: hsl(133, 51%, 63%);
+  --color-reviewed-hover: hsl(133, 51%, 43%);
+  --color-under-review: hsl(187, 56%, 49%);
+  --color-under-review-hover: hsl(187, 56%, 29%);
+  --color-overdue: hsl(354, 91%, 75%);
+  --color-overdue-hover: hsl(354, 91%, 55%);
+}
+/* Чтобы поменять цвет в .btn-primary пришлось заморочиться уже посильнее */
+/* но я это сделал сегодня чисто для примера, в ДЗ у меня просто цвета другие были:)*/
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);/* цвета которые совпадали с --bs-primary назначил при поможи переменной*/
+  --bs-btn-border-color: var(--bs-primary);
+    /* --bs-btn-hover-bg: hsl(216, 91%, 44%); *//* конвертивовал rgb в hls чтобы было проще поменять цвета*/
+  --bs-btn-hover-bg: hsl(208, 60%, 20%);
+    /* --bs-btn-hover-border-color: hsl(216, 91%, 42%); */
+  --bs-btn-hover-border-color: hsl(208, 60%, 22%);
+    /* --bs-btn-active-bg: hsl(216, 91%, 42%); */
+  --bs-btn-active-bg: hsl(208, 60%, 22%);
+    /* --bs-btn-active-border-color: hsl(216, 90%, 39%); */
+  --bs-btn-active-border-color: hsl(208, 59%, 19%);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+ 
+  
+  
+.bg-browse {
+  background-color: var(--color-browse); 
+}
+/*Для изменения фонового цвета в кнопке можно было просто воспользоваться переменными*/ 
+.btn-browse {
+  /*Вместо переназначения background-color, переначначаю переменную которая отвечает за цвет в btn*/
+  --bs-btn-bg: var(--color-browse);
+  /*а тут вообще перменная для ховера, в ином случае пришлось бы писать доп класс .btn-browse:hover */
+  --bs-btn-hover-bg: var(--color-browse-hover);
+  /* остальные переменные я не менял тк в ДЗ border белый. я его через .border-white задавал */
+}
+.bg-current {
+  background-color: var(--color-current);
+}
+.btn-current {
+  --bs-btn-bg: var(--color-current);
+  --bs-btn-hover-bg: var(--color-current-hover);
+}
+.bg-reviewed {
+  background-color: var(--color-reviewed);
+}
+.btn-reviewed {
+  --bs-btn-bg: var(--color-reviewed);
+  --bs-btn-hover-bg: var(--color-reviewed-hover);
+}
+
+.bg-under-review {
+  background-color: var(--color-under-review);
+}
+.btn-under-review {
+  --bs-btn-bg: var(--color-under-review);
+  --bs-btn-hover-bg: var(--color-under-review-hover);
+}
+
+.bg-overdue {
+  background-color: var(--color-overdue);
+}
+.btn-overdue {
+  --bs-btn-bg: var(--color-overdue);
+  --bs-btn-hover-bg: var(--color-overdue-hover);
+}
+.container{
+  min-width: calc(300px - var(--bs-gutter-x));
+}
+.rewards div:first-child span,
+.rewards div:last-child span {
+  position: relative;
+  line-height: 2em;
+  border-radius: var(--bs-border-radius-sm);
+}
+
+.rewards div {
+  display: flex;
+  flex: 1 1 33.3%;
+  margin: 0.4em auto;
+}
+
+.rewards:nth-of-type(odd) div:first-child {
+  justify-content: flex-end;
+}
+
+.rewards:nth-of-type(odd) div:last-child {
+  justify-content: flex-start;
+}
+
+.rewards:nth-of-type(even) div:first-child {
+  order: 1;
+  justify-content: flex-start;
+}
+
+.rewards:nth-of-type(even) div:last-child {
+  order: -1;
+  justify-content: flex-end;
+}
+
+.rewards:nth-of-type(odd) div:first-child span,
+.rewards:nth-of-type(even) div:last-child span {
+  border-right: unset !important;
+}
+
+.rewards:nth-of-type(odd) div:last-child span,
+.rewards:nth-of-type(even) div:first-child span {
+  border-left: unset !important;
+}
+
+.rewards div:first-child span:before,
+.rewards div:last-child span:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  display: block;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color);
+  height: 1.68em;
+  width: 1.68em;
+  border-radius: var(--bs-border-radius-sm);
+}
+
+.rewards:nth-of-type(odd) div:first-child span:before,
+.rewards:nth-of-type(even) div:last-child span:before {
+  right: 4px;
+  border-right: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color);
+  transform-origin: top right;
+  transform: rotate(-45deg);
+}
+
+.rewards:nth-of-type(odd) div:last-child span:before,
+.rewards:nth-of-type(even) div:first-child span:before {
+  left: 4px;
+  border-left: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color);
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+.color-circle {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.icon-left,
+.icon-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.icon-left:before,
+.icon-left:after,
+.icon-right:before,
+.icon-right:after {
+  content: "";
+  display: none;
+  width: 1em;
+  height: 1em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon-left:before {
+  display: inline-flex;
+}
+
+.icon-right:after {
+  display: inline-flex;
+}
+
+.icon-remove:before,
+.icon-remove:after {
+  background-image: url("../icons/trash-can-solid.svg");
+}
+.icon-upload:before,
+.icon-upload:after {
+  background-image: url("../icons/download-solid.svg");
+}
+.icon-resend:before,
+.icon-resend:after {
+  background-image: url("../icons/arrow-rotate-right-solid.svg");
+}
+
+.card-body>.rating{
+  position:absolute;
+  width: 2em;
+  height: 1em;
+  font-size: 0.5em;
+  line-height: 1em;
+  border-radius: 0.5em;
+  top:1rem;
+  right: 1rem;
+}

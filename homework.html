@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WEB211. Николаев. HW 12</title>
+    <style>
+        @media (min-width:1600px){
+            *{font-size: 1vw;
+            }
+            .container{
+                max-width: 82.5vw;
+            }
+        }
+        .nav-icons{
+            height: 1.5rem;
+        }
+        .avatar{
+            height: 2.5rem;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-primary py-2">
+            <nav class="navbar navbar-expand-sm navbar-dark fw-bold">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="icons/chalkboard-user-solid.svg" alt="Logo" class="nav-icons">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-sm-0 flex-grow-1">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="homework.html" class="nav-link active" aria-current="page">Homework</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="settings.html" class="nav-link">Settings</a>
+                            </li>
+                            <li class="nav-item ms-auto d-none d-sm-block">
+                                <a href="#">
+                                    <img src="icons/av_64.png" alt="Logo" class="avatar">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center py-1">
+            <div class="row my-3 flex-wrap">
+                <div class="col-12 col-sm align-self-end order-3 order-sm-0">
+                    <h2 class="text-start fw-normal m-0">JavaScript</h2>
+                </div>
+                <div class="col-12 col-sm">
+                    <h2 class="text-start fw-normal text-sm-center">Homework</h2>
+                </div>
+                <div class="col-12 col-sm text-end align-self-end pt-sm-3">
+                    <span class="d-block small">current - <span class="color-circle bg-current"></span></span>
+                    <span class="d-block small">reciewed - <span class="color-circle bg-reviewed"></span></span>
+                    <span class="d-block small">under review - <span class="color-circle bg-under-review"></span></span>
+                    <span class="d-block small">overdue - <span class="color-circle bg-overdue"></span></span>
+                </div>
+            </div>
+            <hr class="mt-2 mb-4">
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col mb-4"> <!--card 1-start-->
+                    <div class="card bg-current py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Loops</h5>
+                            <p class="card-text my-3 mt-auto">10/05/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Choose file">
+                                    <button type="button" class="btn btn-browse">Browse</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+
+                <div class="col mb-4"> <!--card 1-start-->
+                    <div class="card bg-under-review text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Conditional Statements</h5>
+                            <p class="card-text my-3 mt-auto">10/05/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-remove">Remove</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+
+                <div class="col mb-4"> <!--card 1-start-->
+                    <div class="card bg-under-review text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Variables</h5>
+                            <p class="card-text my-3 mt-auto">05/05/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-remove">Remove</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+                
+                <div class="col d-none d-md-block mb-4 d-lg-none"> <!--card 1-start-->
+                    <div class="card bg-under-review text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text my-3 mt-auto">03/05/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-under-review border-white w-50 icon-left icon-remove">Remove</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+            </div>
+        </div>
+        <div class="container py-1">
+            <h2 class="fw-normal my-3">HTML & CSS</h2>
+            <hr class="mt-2 mb-4">
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col mb-4"> <!--card 1-start-->
+                    <div class="card text-white bg-overdue py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Adaptive layout</h5>
+                            <p class="card-text my-3 mt-auto">29/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Choose file">
+                                    <button type="button" class="btn btn-browse">Browse</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+
+                <div class="col mb-4"> <!--card 2-start-->
+                    <div class="card text-white bg-overdue py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Grid layout</h5>
+                            <p class="card-text my-3 mt-auto">27/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Choose file">
+                                    <button type="button" class="btn btn-browse">Browse</button>
+                                </div>
+                            </form>
+                            <div class="d-none text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+
+                <div class="col mb-4"> <!--card 3-start-->
+                    <div class="card bg-reviewed text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Flexbox</h5>
+                            <p class="card-text my-3 mt-auto">24/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-resend">Remove</button>
+                                </div>
+                            </form>
+                            <div class=" text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">11</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+                
+                <div class="col mb-4"> <!--card 4-start-->
+                    <div class="card bg-reviewed text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Animations</h5>
+                            <p class="card-text my-3 mt-auto">20/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-resend">Remove</button>
+                                </div>
+                            </form>
+                            <div class=" text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">10</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+                
+                <div class="col mb-4"> <!--card 5-start-->
+                    <div class="card bg-reviewed text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Forms</h5>
+                            <p class="card-text my-3 mt-auto">18/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-resend">Remove</button>
+                                </div>
+                            </form>
+                            <div class=" text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">10</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+                
+                <div class="col mb-4"> <!--card 6-start-->
+                    <div class="card bg-reviewed text-white py-2 h-100">
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h5 class="card-title">Tables</h5>
+                            <p class="card-text my-3 mt-auto">17/04/2019</p>
+                            <form action="" class="">
+                                <div class="input-group">
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-upload">Your file</button>
+                                    <button type="button" class="btn text-white btn-reviewed border-white w-50 icon-left icon-resend">Remove</button>
+                                </div>
+                            </form>
+                            <div class=" text-center position-absolute top-0 end-0 m-2 bg-black bg-opacity-25 text-white small px-2 rounded-pill">12</div>
+                        </div>
+                    </div>
+                </div> <!--card-end-->
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

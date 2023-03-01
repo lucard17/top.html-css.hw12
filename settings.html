@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WEB211. Николаев. HW 12</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-primary py-2">
+            <nav class="navbar navbar-expand-sm navbar-dark fw-bold">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="icons/chalkboard-user-solid.svg" alt="Logo" width="30">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-sm-0 flex-grow-1">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="homework.html" class="nav-link">Homework</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="settings.html" class="nav-link active" aria-current="page">Settings</a>
+                            </li>
+                            <li class="nav-item ms-auto d-none d-sm-block">
+                                <a href="#">
+                                    <img src="icons/av_64.png" alt="Logo" width="40">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center py-1">
+            <h2 class="fw-normal my-3">Settings</h2>
+            <hr class="mt-2 mb-4">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-2 overflow-hidden mb-4">
+                    <h6 class="text-center text-uppercase bg-under-review py-3 m-0 position-relative">
+                        avatar
+                        <span
+                            class="position-absolute top-0 start-100 h-100 w-100 bg-under-review d-none d-md-inline-block"></span>
+                    </h6>
+                    <div class="mt-4 text-center">
+                        <img src="icons/av_256.png" alt="" class="img-fluid">
+                    </div>
+                    <button class="btn btn-primary w-100 mt-3">Choose photo</button>
+
+                </div>
+                <div class="col-12 col-md-8 col-lg-5 overflow-hidden mb-4">
+                    <h6 class="text-center text-uppercase bg-under-review py-3 m-0 position-relative ">
+                        <span
+                            class="position-absolute top-0 end-100 h-100 w-100 bg-under-review d-none d-md-inline-block"></span>
+                        student's info
+                        <span
+                            class="position-absolute top-0 start-100 h-100 w-100 bg-under-review d-none d-md-inline-block"></span>
+                    </h6>
+                    <form action="" class="mt-4">
+                        <input type="text" name="FirstName" placeholder="First name" class="form-control mt-3">
+                        <input type="text" name="LastName" placeholder="Last name" class="form-control mt-3">
+                        <input type="Email" name="Email" placeholder="Email" class="form-control mt-3">
+                        <input type="tel" name="PhoneNumder" placeholder="Phone numder" class="form-control mt-3">
+                        <input type="text" name="Address" placeholder="Address" class="form-control mt-3">
+                        <input type="url" name="FBlink" placeholder="FB link" class="form-control mt-3">
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Save changes</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 overflow-hidden mb-4">
+                    <h6 class="text-center text-uppercase bg-under-review py-3 m-0 position-relative">
+                        <span
+                            class="position-absolute top-0 end-100 h-100 w-100 bg-under-review d-none d-lg-inline"></span>
+                        change password
+                    </h6>
+                    <form action="" class="mt-4">
+                        <input type="password" name="OldPassword" placeholder="Old password" class="form-control mt-3">
+                        <input type="password" name="NewPassword" placeholder="New password" class="form-control mt-3">
+                        <input type="password" name="RepeatPassword" placeholder="Repeat password"
+                            class="form-control mt-3">
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Change password</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
